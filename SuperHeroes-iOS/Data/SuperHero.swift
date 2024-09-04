@@ -5,19 +5,17 @@
 //  Created by Mañanas on 4/9/24.
 //
 
-import Foundation
-
-struct SuperHeroResponse {
+struct SuperHeroResponse: Codable {
     let response: String
     let results: [SuperHero]
 }
 
-struct SuperHero {
-    let id: Int
+struct SuperHero: Codable {
+    let id: String
     let name: String
     let image: Image
 }
 
-struct Image {
+struct Image: Codable {
     let url: String
 }

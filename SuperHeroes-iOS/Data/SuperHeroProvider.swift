@@ -9,7 +9,7 @@ import Foundation
 
 class SuperHeroProvider {
     
-    static func findSuperHeroesByName(_ name: String) {
+    static func findSuperHeroesByName(_ name: String, withResult: @escaping ([SuperHero]) -> Void) {
         guard let url = URL(string: "\(Constants.BASE_URL)search/\(name)") else {
             print("URL not valid")
             return
@@ -22,9 +22,8 @@ class SuperHeroProvider {
                 return
             } else if let data = data {
                 // Process the data
-                if let str = String(data: data, encoding: .utf8) {
-                    print("Successfully decoded: \(str)")
-                }
+                let result = try! JSONDecoder().decode(SuperHeroResponse.self, from: data)
+                withResult(result.results)
             }
         }
         task.resume()

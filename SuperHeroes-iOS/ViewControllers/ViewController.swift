@@ -13,7 +13,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        SuperHeroProvider.findSuperHeroesByName("Batman")
+        SuperHeroProvider.findSuperHeroesByName("Batman", withResult: { results in
+            for superHero in results {
+                print(superHero.name)
+            }
+        })
     }
     
     
