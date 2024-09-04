@@ -17,6 +17,7 @@
 		6CF4FC742C884F5200F70C25 /* SuperHeroProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC732C884F5200F70C25 /* SuperHeroProvider.swift */; };
 		6CF4FC772C885F7A00F70C25 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC762C885F7A00F70C25 /* Constants.swift */; };
 		6CF4FC7A2C886AE200F70C25 /* SuperHeroViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC792C886AE200F70C25 /* SuperHeroViewCell.swift */; };
+		6CF4FC7C2C8870F100F70C25 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC7B2C8870F100F70C25 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		6CF4FC732C884F5200F70C25 /* SuperHeroProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroProvider.swift; sourceTree = "<group>"; };
 		6CF4FC762C885F7A00F70C25 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6CF4FC792C886AE200F70C25 /* SuperHeroViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroViewCell.swift; sourceTree = "<group>"; };
+		6CF4FC7B2C8870F100F70C25 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				6CF4FC762C885F7A00F70C25 /* Constants.swift */,
+				6CF4FC7B2C8870F100F70C25 /* UIImageViewExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				6CF4FC5E2C884A7800F70C25 /* SceneDelegate.swift in Sources */,
 				6CF4FC722C884D1300F70C25 /* SuperHero.swift in Sources */,
 				6CF4FC772C885F7A00F70C25 /* Constants.swift in Sources */,
+				6CF4FC7C2C8870F100F70C25 /* UIImageViewExtension.swift in Sources */,
 				6CF4FC7A2C886AE200F70C25 /* SuperHeroViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

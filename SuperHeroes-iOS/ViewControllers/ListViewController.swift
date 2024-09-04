@@ -19,7 +19,7 @@ class ListViewController: UIViewController, UITableViewDataSource {
         
         tableView.dataSource = self
         
-        SuperHeroProvider.findSuperHeroesByName("Batman", withResult: { results in
+        SuperHeroProvider.findSuperHeroesByName("Super", withResult: { results in
             self.superHeroList = results
             DispatchQueue.main.async {
                 self.tableView.reloadData()

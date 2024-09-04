@@ -15,6 +15,7 @@ class SuperHeroViewCell: UITableViewCell {
     
     func render(superHero: SuperHero) {
         nameLabel.text = superHero.name
+        avatarImageView.loadFrom(url: superHero.image.url)
     }
 
     override func awakeFromNib() {
