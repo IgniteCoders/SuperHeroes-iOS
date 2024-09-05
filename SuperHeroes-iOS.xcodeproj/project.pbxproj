@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C64C2C32C89B7C00045615E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64C2C22C89B7C00045615E /* DetailViewController.swift */; };
 		6CF4FC5C2C884A7800F70C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC5B2C884A7800F70C25 /* AppDelegate.swift */; };
 		6CF4FC5E2C884A7800F70C25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC5D2C884A7800F70C25 /* SceneDelegate.swift */; };
 		6CF4FC602C884A7800F70C25 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC5F2C884A7800F70C25 /* ListViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C64C2C22C89B7C00045615E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6CF4FC582C884A7800F70C25 /* SuperHeroes-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperHeroes-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF4FC5B2C884A7800F70C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CF4FC5D2C884A7800F70C25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				6CF4FC5F2C884A7800F70C25 /* ListViewController.swift */,
+				6C64C2C22C89B7C00045615E /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C64C2C32C89B7C00045615E /* DetailViewController.swift in Sources */,
 				6CF4FC602C884A7800F70C25 /* ListViewController.swift in Sources */,
 				6CF4FC5C2C884A7800F70C25 /* AppDelegate.swift in Sources */,
 				6CF4FC742C884F5200F70C25 /* SuperHeroProvider.swift in Sources */,
