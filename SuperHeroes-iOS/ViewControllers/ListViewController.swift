@@ -19,12 +19,21 @@ class ListViewController: UIViewController, UITableViewDataSource {
         
         tableView.dataSource = self
         
-        SuperHeroProvider.findSuperHeroesByName("Super", withResult: { results in
+        /*SuperHeroProvider.findSuperHeroesByName("Super", withResult: { [unowned self] results in
             self.superHeroList = results
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-        })
+        })*/
+        
+        Task {
+            let results = try? await SuperHeroProvider.findSuperHeroesByName("Super")
+            
+            self.superHeroList = results!
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
