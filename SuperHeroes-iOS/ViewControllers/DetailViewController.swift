@@ -11,15 +11,32 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var avatarImageView: UIImageView!
     
+    @IBOutlet weak var realNameLabel: UILabel!
+    @IBOutlet weak var publisherLabel: UILabel!
+    @IBOutlet weak var placeOfBirthLabel: UILabel!
+    @IBOutlet weak var alignmentLabel: UILabel!
+    
     var superHero: SuperHero? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        avatarImageView.roundCorners(radius: 8)
 
         // Do any additional setup after loading the view.
         if let superHero = superHero {
             self.navigationItem.title = superHero.name
             avatarImageView.loadFrom(url: superHero.image.url)
+            
+            realNameLabel.text = superHero.biography.realName
+            publisherLabel.text = superHero.biography.publisher
+            placeOfBirthLabel.text = superHero.biography.placeOfBirth
+            alignmentLabel.text = superHero.biography.alignment.uppercased()
+            if (superHero.biography.alignment == "good") {
+                alignmentLabel.textColor = UIColor.systemGreen
+            } else {
+                alignmentLabel.textColor = UIColor.systemRed
+            }
         }
     }
     

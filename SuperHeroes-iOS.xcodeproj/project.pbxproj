@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C360BFE2C8B1C810004324D /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C360BFD2C8B1C810004324D /* UIVIewExtension.swift */; };
 		6C64C2C32C89B7C00045615E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64C2C22C89B7C00045615E /* DetailViewController.swift */; };
 		6CF4FC5C2C884A7800F70C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC5B2C884A7800F70C25 /* AppDelegate.swift */; };
 		6CF4FC5E2C884A7800F70C25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC5D2C884A7800F70C25 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C360BFD2C8B1C810004324D /* UIVIewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
 		6C64C2C22C89B7C00045615E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6CF4FC582C884A7800F70C25 /* SuperHeroes-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperHeroes-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF4FC5B2C884A7800F70C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				6CF4FC762C885F7A00F70C25 /* Constants.swift */,
 				6CF4FC7B2C8870F100F70C25 /* UIImageViewExtension.swift */,
+				6C360BFD2C8B1C810004324D /* UIVIewExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				6CF4FC722C884D1300F70C25 /* SuperHero.swift in Sources */,
 				6CF4FC772C885F7A00F70C25 /* Constants.swift in Sources */,
 				6CF4FC7C2C8870F100F70C25 /* UIImageViewExtension.swift in Sources */,
+				6C360BFE2C8B1C810004324D /* UIVIewExtension.swift in Sources */,
 				6CF4FC7A2C886AE200F70C25 /* SuperHeroViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
