@@ -28,6 +28,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDe
         
         // Setup TableView
         tableView.dataSource = self
+        configureRefreshControl()
         
         // Search data
         searchSuperHeroes("a")
@@ -47,6 +48,18 @@ class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDe
         cell.render(superHero: superHero)
         
         return cell
+    }
+    
+    // MARK: Pull to refresh
+    func configureRefreshControl() {
+       // Add the refresh control to your UIScrollView object.
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(handleRefreshControl), for: .valueChanged)
+    }
+        
+    @objc func handleRefreshControl() {
+        // Update your content…
+        searchSuperHeroes("a")
     }
     
     // MARK: SearchBar Delegate
@@ -95,6 +108,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDe
             }
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                // Dismiss the refresh control.
+                self.tableView.refreshControl?.endRefreshing()
             }
         }
     }
