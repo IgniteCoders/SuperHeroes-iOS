@@ -88,8 +88,11 @@ class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDe
         
         Task {
             let results = try? await SuperHeroProvider.findSuperHeroesByName(query)
-            
-            self.superHeroList = results!
+            if let results = results {
+                self.superHeroList = results
+            } else {
+                self.superHeroList = []
+            }
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
