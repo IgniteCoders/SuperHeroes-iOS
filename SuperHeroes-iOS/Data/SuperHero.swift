@@ -37,11 +37,11 @@ struct Biography: Codable {
 }
 
 struct Stats: Codable {
-    let intelligence: String?
-    let strength: String?
-    let speed: String?
-    let durability: String?
-    let power: String?
-    let combat: String?
+    let intelligence: String
+    let strength: String
+    let speed: String
+    let durability: String
+    let power: String
+    let combat: String
 }
 

@@ -16,6 +16,20 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var placeOfBirthLabel: UILabel!
     @IBOutlet weak var alignmentLabel: UILabel!
     
+    
+    @IBOutlet weak var intelligenceLabel: UILabel!
+    @IBOutlet weak var strengthLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var durabilityLabel: UILabel!
+    @IBOutlet weak var powerLabel: UILabel!
+    @IBOutlet weak var combatLabel: UILabel!
+    @IBOutlet weak var intelligenceProgressView: UIProgressView!
+    @IBOutlet weak var strengthProgressView: UIProgressView!
+    @IBOutlet weak var speedProgressView: UIProgressView!
+    @IBOutlet weak var durabilityProgressView: UIProgressView!
+    @IBOutlet weak var powerProgressView: UIProgressView!
+    @IBOutlet weak var combatProgressView: UIProgressView!
+    
     var superHero: SuperHero? = nil
 
     override func viewDidLoad() {
@@ -37,6 +51,20 @@ class DetailViewController: UIViewController {
             } else {
                 alignmentLabel.textColor = UIColor.systemRed
             }
+            
+            intelligenceLabel.text = superHero.powerstats.intelligence
+            strengthLabel.text = superHero.powerstats.strength
+            speedLabel.text = superHero.powerstats.speed
+            durabilityLabel.text = superHero.powerstats.durability
+            powerLabel.text = superHero.powerstats.power
+            combatLabel.text = superHero.powerstats.combat
+            
+            intelligenceProgressView.progress = (Float(superHero.powerstats.intelligence) ?? 0.0) / 100
+            strengthProgressView.progress = (Float(superHero.powerstats.strength) ?? 0.0) / 100
+            speedProgressView.progress = (Float(superHero.powerstats.speed) ?? 0.0) / 100
+            durabilityProgressView.progress = (Float(superHero.powerstats.durability) ?? 0.0) / 100
+            powerProgressView.progress = (Float(superHero.powerstats.power) ?? 0.0) / 100
+            combatProgressView.progress = (Float(superHero.powerstats.combat) ?? 0.0) / 100
         }
     }
     
